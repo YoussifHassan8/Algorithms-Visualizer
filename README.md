@@ -22,3 +22,5 @@
 
 ## Technologies Used
 - **HTML, CSS, JavaScript**: The core technologies used to build the app's user interface and logic.
+
+You can try it from here [You can try it from here!](https://youssifhassan8.github.io/Algorithms-Visualizer/)
