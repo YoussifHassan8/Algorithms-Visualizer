@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Binary search</title>
+  </head>
+  <body>
+    <div class="sort">
+      <div class="controls">
+        <label>
+          The size of the list:
+          <input type="range" id="list_size" min="2" max="1000" value="1000" />
+        </label>
+        <label
+          >The number you are looking for:
+          <input class="search" type="text" min="1" max="100" value="40"
+        /></label>
+        <label>
+          Sorting speed
+          <input type="range" id="list_speed" min="1" max="1000" value="1" />
+        </label>
+        <button class="random_list">Create new random list</button>
+        <button class="visualize">Visualize</button>
+        <a href="index.html">Back to the main menu</a>
+      </div>
+      <div class="list"></div>
+    </div>
+    <script src="binary-search.js"></script>
+  </body>
+</html>

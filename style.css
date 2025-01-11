@@ -1,0 +1,124 @@
+:root {
+    --background-color: #1E1E1E ;
+    --sorted-color: #28A745 ;
+    --unsorted-color: #E74C3C;
+    --current-color:#F1C40F;
+    --text-color:white ;
+    --section-padding: 100px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1,p,a,ol,label{
+    color: var(--text-color);
+} 
+body {
+    background-color: var(--background-color);
+    font-family: "Rubik", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+.main_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main_menu h1{
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+.main_menu li{
+    font-size: 2rem;
+}
+.main_menu li a{
+    cursor: pointer;
+}
+.sort .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    border: 0px solid white;
+    padding: 8px;
+    background-color: #3b3b3b;
+    min-height: 72px;
+}
+.sort .controls a,button,input{
+    cursor: pointer;
+    text-decoration: none;
+}
+.sort .controls button{
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    height: 28px;
+    color: white;
+    background-color: var(--sorted-color);
+}
+.sort .list{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 6px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sort .list .element{
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 58px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--unsorted-color);
+}
+.sort .list .element .number{
+    color: white;
+}
+.current{
+    background-color:var(--current-color);
+}
+.search{
+    width: 42px;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 0 4px;
+}
